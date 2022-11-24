@@ -310,7 +310,7 @@ export class DashboardComponent implements OnInit {
 
     this.lineChartWithNumbersAndGridData = [
         {
-          label: "CONSUMO",
+          label: "Consumption",
            pointBorderWidth: 2,
            pointHoverRadius: 4,
            pointHoverBorderWidth: 1,
@@ -346,7 +346,7 @@ export class DashboardComponent implements OnInit {
 
     this.lineChartGradientsNumbersData = [
         {
-          label: "Active Countries",
+          label: "Consumption",
           pointBorderWidth: 2,
           pointHoverRadius: 4,
           pointHoverBorderWidth: 1,
