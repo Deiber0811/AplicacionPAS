@@ -60,7 +60,7 @@ export class DashboardComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.chartColor = "#FFFFFF";
+    this.chartColor = "#BB1E1E";
     this.canvas = document.getElementById("bigDashboardChart");
     this.ctx = this.canvas.getContext("2d");
 
@@ -70,7 +70,7 @@ export class DashboardComponent implements OnInit {
 
     this.gradientFill = this.ctx.createLinearGradient(0, 200, 0, 50);
     this.gradientFill.addColorStop(0, "rgba(128, 182, 244, 0)");
-    this.gradientFill.addColorStop(1, "rgba(255, 255, 255, 0.24)");
+    this.gradientFill.addColorStop(1, "rgba(187, 30, 30, 0.24)");
 
     this.lineBigDashboardChartData = [
         {
@@ -91,7 +91,7 @@ export class DashboardComponent implements OnInit {
          backgroundColor: this.gradientFill,
          borderColor: this.chartColor,
          pointBorderColor: this.chartColor,
-         pointBackgroundColor: "#2c2c2c",
+         pointBackgroundColor: "#C6C581",
          pointHoverBackgroundColor: "#2c2c2c",
          pointHoverBorderColor: this.chartColor,
        }
@@ -262,16 +262,16 @@ export class DashboardComponent implements OnInit {
     this.ctx = this.canvas.getContext("2d");
 
     this.gradientStroke = this.ctx.createLinearGradient(500, 0, 100, 0);
-    this.gradientStroke.addColorStop(0, '#80b6f4');
+    this.gradientStroke.addColorStop(0, '#C6C581');
     this.gradientStroke.addColorStop(1, this.chartColor);
 
     this.gradientFill = this.ctx.createLinearGradient(0, 170, 0, 50);
-    this.gradientFill.addColorStop(0, "rgba(128, 182, 244, 0)");
-    this.gradientFill.addColorStop(1, "rgba(249, 99, 59, 0.40)");
+    this.gradientFill.addColorStop(0, "rgba(102, 36, 94, 0)");
+    this.gradientFill.addColorStop(1, "rgba(102, 36, 94, 0.40)");
 
     this.lineChartData = [
         {
-          label: "Active Users",
+          label: "CONSUMO POR MES",
           pointBorderWidth: 2,
           pointHoverRadius: 4,
           pointHoverBorderWidth: 1,
@@ -283,7 +283,7 @@ export class DashboardComponent implements OnInit {
       ];
       this.lineChartColors = [
        {
-         borderColor: "#f96332",
+         borderColor: "#DF013A",
          pointBorderColor: "#FFF",
          pointBackgroundColor: "#f96332",
          backgroundColor: this.gradientFill
@@ -307,7 +307,7 @@ export class DashboardComponent implements OnInit {
 
     this.lineChartWithNumbersAndGridData = [
         {
-          label: "Email Stats",
+          label: "CONSUMO",
            pointBorderWidth: 2,
            pointHoverRadius: 4,
            pointHoverBorderWidth: 1,
@@ -319,9 +319,9 @@ export class DashboardComponent implements OnInit {
       ];
       this.lineChartWithNumbersAndGridColors = [
        {
-         borderColor: "#18ce0f",
+         borderColor: "#D609A5",
          pointBorderColor: "#FFF",
-         pointBackgroundColor: "#18ce0f",
+         pointBackgroundColor: "#18C8EB",
          backgroundColor: this.gradientFill
        }
      ];
