@@ -89,6 +89,7 @@
             > a{
                 margin: 10px 15px 0;
                 border-radius: $btn-round-radius;
+                 // Sidebar text color not in focus
                 color: $white-color;
                 display: block;
                 text-decoration: none;
@@ -348,11 +349,13 @@
   }
 }
 
+// Header panel color 
+
 .panel-header {
   height: 260px;
   padding-top: 80px;
   padding-bottom: 45px;
-  @include panel-gradient($black-color);
+  @include panel-gradient(#dc8a78);
   position: relative;
   overflow: hidden;
 
@@ -367,7 +370,7 @@
       font-size: 13px;
 
       a{
-        color: $white-color;
+        color: #40a02b;
       }
     }
   }

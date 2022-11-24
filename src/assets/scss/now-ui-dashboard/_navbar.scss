@@ -7,7 +7,7 @@
 
     a{
         vertical-align: middle;
-
+        // Color text header
         &:not(.btn):not(.dropdown-item){
             color: $white-color;
         }
