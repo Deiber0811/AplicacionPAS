@@ -278,7 +278,7 @@
       @include sidebar-color($orange-color);
     }
     &[data-color="red"]{
-      @include sidebar-color($danger-color);
+      @include sidebar-color($Subtext0-hex);
     }
     &[data-color="yellow"]{
       @include sidebar-color($warning-color);
@@ -355,7 +355,8 @@
   height: 260px;
   padding-top: 80px;
   padding-bottom: 45px;
-  @include panel-gradient(#dc8a78);
+  // Gradient header
+  @include panel-gradient(#8c8fa1);
   position: relative;
   overflow: hidden;
 
@@ -370,7 +371,7 @@
       font-size: 13px;
 
       a{
-        color: #40a02b;
+        color: $white-color;
       }
     }
   }
