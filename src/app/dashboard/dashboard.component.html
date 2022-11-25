@@ -1,120 +1,74 @@
 <div class="panel-header panel-header-lg">
-    <canvas baseChart id="bigDashboardChart"
-                [datasets]="lineBigDashboardChartData"
-                [labels]="lineBigDashboardChartLabels"
-                 [colors]="lineBigDashboardChartColors"
-                [options]="lineBigDashboardChartOptions"
-                [chartType]="lineBigDashboardChartType"
-                (chartHover)="chartHovered($event)"
-                (chartClick)="chartClicked($event)"></canvas>
+  <canvas baseChart id="bigDashboardChart" [datasets]="lineBigDashboardChartData" [labels]="lineBigDashboardChartLabels"
+    [colors]="lineBigDashboardChartColors" [options]="lineBigDashboardChartOptions"
+    [chartType]="lineBigDashboardChartType" (chartHover)="chartHovered($event)"
+    (chartClick)="chartClicked($event)"></canvas>
 </div>
 
 <div class="main-content">
   <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-6">
       <div class="card card-chart">
         <div class="card-header">
-          <h5 class="card-category">All rooms</h5>
-          <h4 class="card-title">Consumption by rooms</h4>
+          <h5 class="card-category">Sala 1</h5>
+          <h4 class="card-title">Consumo sala 1</h4>
           <div ngbDropdown>
-            <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret" ngbDropdownToggle>
+            <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret"
+              ngbDropdownToggle>
               <i class="now-ui-icons loader_gear"></i>
             </button>
             <div ngbDropdownMenu class="dropdown-menu-right">
-              <a class="dropdown-item" href="#">See room</a>
-              <a class="dropdown-item" href="#">Download Consumption</a>
-              <a class="dropdown-item" href="#">Show consumption by room</a>
-              </div>
+              <a class="dropdown-item" href="#">Entrar an la sala</a>
+              <a class="dropdown-item text-danger" href="#">Descargar Consumo</a>
+            </div>
           </div>
         </div>
         <div class="card-body">
           <div class="chart-area">
-            <canvas baseChart id="lineChartExample"
-                        [datasets]="lineChartData"
-                        [labels]="lineChartLabels"
-                        [colors]="lineChartColors"
-                        [options]="lineChartOptions"
-                        [chartType]="lineChartType"
-                        (chartHover)="chartHovered($event)"
-                        (chartClick)="chartClicked($event)"></canvas>
+            <canvas baseChart id="lineChartExample" [datasets]="lineChartData" [labels]="lineChartLabels"
+              [colors]="lineChartColors" [options]="lineChartOptions" [chartType]="lineChartType"
+              (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
           </div>
         </div>
         <div class="card-footer">
           <div class="stats">
-            <i class="now-ui-icons loader_refresh spin"></i> Every 10 minutes
+            <i class="now-ui-icons loader_refresh spin"></i> Cada 10 minutos
           </div>
         </div>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6">
+    <div class="col-lg-6 col-md-6">
       <div class="card card-chart">
         <div class="card-header">
-          <h5 class="card-category">Room 1</h5>
-          <h4 class="card-title">Consumption</h4>
+          <h5 class="card-category">Sala 2</h5>
+          <h4 class="card-title">Consumo sala 2</h4>
           <div ngbDropdown>
-            <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret" ngbDropdownToggle>
+            <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret"
+              ngbDropdownToggle>
               <i class="now-ui-icons loader_gear"></i>
             </button>
             <div ngbDropdownMenu class="dropdown-menu-right">
-              <a class="dropdown-item" href="#">Enter the room</a>
-              <a class="dropdown-item text-danger" href="#">Download consumption</a>           
+              <a class="dropdown-item" href="#">Entrar a la sala</a>
+              <a class="dropdown-item text-danger" href="#">Descargar consumo</a>
             </div>
           </div>
         </div>
         <div class="card-body">
           <div class="chart-area">
             <!-- <canvas id="lineChartExampleWithNumbersAndGrid"></canvas> -->
-            <canvas baseChart id="lineChartExampleWithNumbersAndGrid"
-                        [datasets]="lineChartWithNumbersAndGridData"
-                        [labels]="lineChartWithNumbersAndGridLabels"
-                        [colors]="lineChartWithNumbersAndGridColors"
-                        [options]="lineChartWithNumbersAndGridOptions"
-                        [chartType]="lineChartWithNumbersAndGridType"
-                        (chartHover)="chartHovered($event)"
-                        (chartClick)="chartClicked($event)"></canvas>
+            <canvas baseChart id="lineChartExampleWithNumbersAndGrid" [datasets]="lineChartWithNumbersAndGridData"
+              [labels]="lineChartWithNumbersAndGridLabels" [colors]="lineChartWithNumbersAndGridColors"
+              [options]="lineChartWithNumbersAndGridOptions" [chartType]="lineChartWithNumbersAndGridType"
+              (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
           </div>
         </div>
         <div class="card-footer">
           <div class="stats">
-            <i class="now-ui-icons loader_refresh spin"></i> Every 10 minutes
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6">
-      <div class="card card-chart">
-        <div class="card-header">
-          <h5 class="card-category">Room 2</h5>
-          <h4 class="card-title">Consumption</h4>
-          <div ngbDropdown>
-            <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret" ngbDropdownToggle>
-              <i class="now-ui-icons loader_gear"></i>
-            </button>
-            <div ngbDropdownMenu class="dropdown-menu-right">
-              <a class="dropdown-item" href="#">Enter the room</a>
-              <a class="dropdown-item text-danger" href="#">Download consumption</a>           
-            </div>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="chart-area">
-            <canvas baseChart id="barChartSimpleGradientsNumbers"
-                        [datasets]="lineChartGradientsNumbersData"
-                        [labels]="lineChartGradientsNumbersLabels"
-                        [colors]="lineChartGradientsNumbersColors"
-                        [options]="lineChartGradientsNumbersOptions"
-                        [chartType]="lineChartGradientsNumbersType"
-                        (chartHover)="chartHovered($event)"
-                        (chartClick)="chartClicked($event)"></canvas>
-          </div>
-        </div>
-        <div class="card-footer">
-          <div class="stats">
-            <i class="now-ui-icons loader_refresh spin"></i> Every 10 minutes
+            <i class="now-ui-icons loader_refresh spin"></i> Cada 10 minutos
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+
 </div>
