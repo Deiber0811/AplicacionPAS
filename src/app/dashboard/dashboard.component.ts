@@ -269,8 +269,9 @@ export class DashboardComponent implements OnInit {
     this.gradientStroke.addColorStop(1, this.chartColor);
 
     this.gradientFill = this.ctx.createLinearGradient(0, 170, 0, 50);
-    this.gradientFill.addColorStop(0, "rgba(102, 36, 94, 0)");
-    this.gradientFill.addColorStop(1, "rgba(102, 36, 94, 0.40)");
+    // Gradient - All Rooms
+    this.gradientFill.addColorStop(0, "rgba(4, 165, 229, 0)");
+    this.gradientFill.addColorStop(1, "rgba(4, 165, 229, 0.40)");
 
     this.lineChartData = [
         {
@@ -285,10 +286,13 @@ export class DashboardComponent implements OnInit {
         }
       ];
       this.lineChartColors = [
+
        {
-         borderColor: "#DF013A",
+        // Color Line - All Rooms
+         borderColor: "#5c5f77",
          pointBorderColor: "#FFF",
-         pointBackgroundColor: "#f96332",
+         // Colors dots - All Rooms
+         pointBackgroundColor: "#04a5e5",
          backgroundColor: this.gradientFill
        }
      ];
@@ -305,8 +309,9 @@ export class DashboardComponent implements OnInit {
     this.gradientStroke.addColorStop(1, this.chartColor);
 
     this.gradientFill = this.ctx.createLinearGradient(0, 170, 0, 50);
-    this.gradientFill.addColorStop(0, "rgba(128, 182, 244, 0)");
-    this.gradientFill.addColorStop(1, this.hexToRGB('#18ce0f', 0.4));
+    // Color Gradient - Room 1
+    this.gradientFill.addColorStop(0, "rgba(136, 57, 239, 0)");
+    this.gradientFill.addColorStop(1, "rgba(136, 57, 239, 0.4)");
 
     this.lineChartWithNumbersAndGridData = [
         {
@@ -322,9 +327,11 @@ export class DashboardComponent implements OnInit {
       ];
       this.lineChartWithNumbersAndGridColors = [
        {
-         borderColor: "#D609A5",
+        // Color Line - Room 1
+         borderColor: "#5c5f77",
          pointBorderColor: "#FFF",
-         pointBackgroundColor: "#18C8EB",
+         // Color Dots = Room 1
+         pointBackgroundColor: "#8839ef",
          backgroundColor: this.gradientFill
        }
      ];
