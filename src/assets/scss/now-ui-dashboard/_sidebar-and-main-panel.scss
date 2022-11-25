@@ -278,7 +278,7 @@
       @include sidebar-color($orange-color);
     }
     &[data-color="red"]{
-      @include sidebar-color($Subtext0-hex);
+      @include sidebar-color($Teal-hex);
     }
     &[data-color="yellow"]{
       @include sidebar-color($warning-color);
@@ -356,7 +356,7 @@
   padding-top: 80px;
   padding-bottom: 45px;
   // Gradient header
-  @include panel-gradient(#8c8fa1);
+  @include panel-gradient($Teal-hex);
   position: relative;
   overflow: hidden;
 
