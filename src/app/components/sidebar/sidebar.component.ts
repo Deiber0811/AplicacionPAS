@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+//import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 declare interface RouteInfo {
     path: string;
@@ -8,13 +9,10 @@ declare interface RouteInfo {
 }
 export const ROUTES: RouteInfo[] = [
     { path: '/dashboard', title: 'Dashboard',  icon: 'design_app', class: '' },
-    { path: '/icons', title: 'Icons',  icon:'education_atom', class: '' },
-    { path: '/sala1', title: 'Sala_1',  icon:'location_map-big', class: '' },
-    { path: '/sala2', title: 'Sala_2',  icon:'ui-1_bell-53', class: '' },
+    { path: '/sala1', title: 'Sala 1',  icon: 'fa-house', class: '' },
+    { path: '/sala2', title: 'Sala 2',  icon:'ui-1_bell-53', class: '' },
 
-    { path: '/user-profile', title: 'User Profile',  icon:'users_single-02', class: '' },
     { path: '/table-list', title: 'Table List',  icon:'design_bullet-list-67', class: '' },
-    { path: '/typography', title: 'Typography',  icon:'text_caps-small', class: '' },
 
 ];
 
@@ -25,8 +23,9 @@ export const ROUTES: RouteInfo[] = [
 })
 export class SidebarComponent implements OnInit {
   menuItems: any[];
+  //faCoffee = faCoffee;
 
-  constructor() { }
+  constructor() {}
 
   ngOnInit() {
     this.menuItems = ROUTES.filter(menuItem => menuItem);
