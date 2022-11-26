@@ -7,14 +7,14 @@ import { FooterComponent } from './footer/footer.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 
-import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+//import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   imports: [
     CommonModule,
     RouterModule,
     NgbModule,
-    FontAwesomeModule
+   // FontAwesomeModule
   ],
   declarations: [
     FooterComponent,
