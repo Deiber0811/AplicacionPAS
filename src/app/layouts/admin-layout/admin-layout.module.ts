@@ -9,7 +9,7 @@ import { TableListComponent } from '../../table-list/table-list.component';
 import { TypographyComponent } from '../../typography/typography.component';
 import { IconsComponent } from '../../icons/icons.component';
 import { Sala1Component } from '../../sala1/sala1.component';
-import { NotificationsComponent } from '../../notifications/notifications.component';
+import { Sala2Component } from '../../sala2/sala2.component';
 import { ChartsModule } from 'ng2-charts';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
@@ -30,7 +30,7 @@ import { ToastrModule } from 'ngx-toastr';
     TypographyComponent,
     IconsComponent,
     Sala1Component,
-    NotificationsComponent,
+    Sala2Component,
   ]
 })
 

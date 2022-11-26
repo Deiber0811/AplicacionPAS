@@ -1,120 +1,158 @@
 <div class="panel-header panel-header-lg">
-    <canvas baseChart id="bigDashboardChart"
-                [datasets]="lineBigDashboardChartData"
-                [labels]="lineBigDashboardChartLabels"
-                 [colors]="lineBigDashboardChartColors"
-                [options]="lineBigDashboardChartOptions"
-                [chartType]="lineBigDashboardChartType"
-                (chartHover)="chartHovered($event)"
-                (chartClick)="chartClicked($event)"></canvas>
+  <canvas baseChart id="bigDashboardChart" [datasets]="lineBigDashboardChartData" [labels]="lineBigDashboardChartLabels"
+    [colors]="lineBigDashboardChartColors" [options]="lineBigDashboardChartOptions"
+    [chartType]="lineBigDashboardChartType" (chartHover)="chartHovered($event)"
+    (chartClick)="chartClicked($event)"></canvas>
 </div>
 
 <div class="main-content">
   <div class="row">
-    <div class="col-lg-4">
+    <div class="col-lg-6">
       <div class="card card-chart">
         <div class="card-header">
-          <h5 class="card-category">All rooms</h5>
-          <h4 class="card-title">Consumption by rooms</h4>
+          <h5 class="card-category">Sala 1</h5>
+          <h4 class="card-title">Consumo sala 1</h4>
           <div ngbDropdown>
-            <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret" ngbDropdownToggle>
+            <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret"
+              ngbDropdownToggle>
               <i class="now-ui-icons loader_gear"></i>
             </button>
             <div ngbDropdownMenu class="dropdown-menu-right">
-              <a class="dropdown-item" href="#">See room</a>
-              <a class="dropdown-item" href="#">Download Consumption</a>
-              <a class="dropdown-item" href="#">Show consumption by room</a>
-              </div>
+              <a class="dropdown-item" href="#">Entrar an sala</a>
+              <a class="dropdown-item text-danger" href="#">Descargar Consumo</a>
+            </div>
           </div>
         </div>
         <div class="card-body">
           <div class="chart-area">
-            <canvas baseChart id="lineChartExample"
-                        [datasets]="lineChartData"
-                        [labels]="lineChartLabels"
-                        [colors]="lineChartColors"
-                        [options]="lineChartOptions"
-                        [chartType]="lineChartType"
-                        (chartHover)="chartHovered($event)"
-                        (chartClick)="chartClicked($event)"></canvas>
+            <canvas baseChart id="lineChartExample" [datasets]="lineChartData" [labels]="lineChartLabels"
+              [colors]="lineChartColors" [options]="lineChartOptions" [chartType]="lineChartType"
+              (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
           </div>
         </div>
         <div class="card-footer">
           <div class="stats">
-            <i class="now-ui-icons loader_refresh spin"></i> Every 10 minutes
+            <i class="now-ui-icons loader_refresh spin"></i> Cada 10 minutos
           </div>
         </div>
       </div>
     </div>
-    <div class="col-lg-4 col-md-6">
+    <div class="col-lg-6 col-md-6">
       <div class="card card-chart">
         <div class="card-header">
-          <h5 class="card-category">Room 1</h5>
-          <h4 class="card-title">Consumption</h4>
+          <h5 class="card-category">Sala 2</h5>
+          <h4 class="card-title">Consumo sala 2</h4>
           <div ngbDropdown>
-            <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret" ngbDropdownToggle>
+            <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret"
+              ngbDropdownToggle>
               <i class="now-ui-icons loader_gear"></i>
             </button>
             <div ngbDropdownMenu class="dropdown-menu-right">
-              <a class="dropdown-item" href="#">Enter the room</a>
-              <a class="dropdown-item text-danger" href="#">Download consumption</a>           
+              <a class="dropdown-item" href="#">Entrar a la sala</a>
+              <a class="dropdown-item text-danger" href="#">Descargar consumo</a>
             </div>
           </div>
         </div>
         <div class="card-body">
           <div class="chart-area">
             <!-- <canvas id="lineChartExampleWithNumbersAndGrid"></canvas> -->
-            <canvas baseChart id="lineChartExampleWithNumbersAndGrid"
-                        [datasets]="lineChartWithNumbersAndGridData"
-                        [labels]="lineChartWithNumbersAndGridLabels"
-                        [colors]="lineChartWithNumbersAndGridColors"
-                        [options]="lineChartWithNumbersAndGridOptions"
-                        [chartType]="lineChartWithNumbersAndGridType"
-                        (chartHover)="chartHovered($event)"
-                        (chartClick)="chartClicked($event)"></canvas>
+            <canvas baseChart id="lineChartExampleWithNumbersAndGrid" [datasets]="lineChartWithNumbersAndGridData"
+              [labels]="lineChartWithNumbersAndGridLabels" [colors]="lineChartWithNumbersAndGridColors"
+              [options]="lineChartWithNumbersAndGridOptions" [chartType]="lineChartWithNumbersAndGridType"
+              (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
           </div>
         </div>
         <div class="card-footer">
           <div class="stats">
-            <i class="now-ui-icons loader_refresh spin"></i> Every 10 minutes
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-4 col-md-6">
-      <div class="card card-chart">
-        <div class="card-header">
-          <h5 class="card-category">Room 2</h5>
-          <h4 class="card-title">Consumption</h4>
-          <div ngbDropdown>
-            <button type="button" class="btn btn-round btn-default dropdown-toggle btn-simple btn-icon no-caret" ngbDropdownToggle>
-              <i class="now-ui-icons loader_gear"></i>
-            </button>
-            <div ngbDropdownMenu class="dropdown-menu-right">
-              <a class="dropdown-item" href="#">Enter the room</a>
-              <a class="dropdown-item text-danger" href="#">Download consumption</a>           
-            </div>
-          </div>
-        </div>
-        <div class="card-body">
-          <div class="chart-area">
-            <canvas baseChart id="barChartSimpleGradientsNumbers"
-                        [datasets]="lineChartGradientsNumbersData"
-                        [labels]="lineChartGradientsNumbersLabels"
-                        [colors]="lineChartGradientsNumbersColors"
-                        [options]="lineChartGradientsNumbersOptions"
-                        [chartType]="lineChartGradientsNumbersType"
-                        (chartHover)="chartHovered($event)"
-                        (chartClick)="chartClicked($event)"></canvas>
-          </div>
-        </div>
-        <div class="card-footer">
-          <div class="stats">
-            <i class="now-ui-icons loader_refresh spin"></i> Every 10 minutes
+            <i class="now-ui-icons loader_refresh spin"></i> Cada 10 minutos
           </div>
         </div>
       </div>
     </div>
   </div>
-  
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-white text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+    <!-- Left -->
+    <div class="me-5 d-none d-lg-block">
+      <span>Ponte en contacto con Nosotros: </span>
+    </div>
+    <!-- Left -->
+
+    <!-- Right -->
+    <div>
+      <a href="" class="me-4 link-secondary">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://twitter.com/Deiber081" class="me-4 link-secondary">
+        <i class="fab fa-twitter"></i>
+      </a>        
+      <a href="https://github.com/Deiber0811" class="me-4 link-secondary">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <!-- Right -->
+  </section>
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            <i class="fas fa-gem me-3 text-secondary"></i>PAS LORICA
+          </h6>
+          <p>
+            Nuestro proyecto PAS está dirigido a promover el ahorro de energia de una manera 
+            eficiente y eficaz.
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Aplicación web hecha con:
+          </h6>
+          <p>
+            <a href="https://angular.io/cli" class="text-reset">Angular</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">Contacto</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i> Lorica - Córdoba Colombia</p>
+          <p>
+            <i class="fas fa-envelope me-3 text-secondary"></i>
+            deiberlink@gmail.com
+          </p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> +57 301 6313714</p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> +57 314 8538060</p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> +57 314 2132206</p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i> +57 312 8981967</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+    © 2021 Copyright:
+    <a class="text-reset fw-bold" href="#">Semester classroom project</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
 </div>
