@@ -12,7 +12,7 @@ export const ROUTES: RouteInfo[] = [
     { path: '/sala1', title: 'Sala 1',  icon: 'fa-house', class: '' },
     { path: '/sala2', title: 'Sala 2',  icon:'ui-1_bell-53', class: '' },
 
-    { path: '/table-list', title: 'Table List',  icon:'design_bullet-list-67', class: '' },
+    //{ path: '/table-list', title: 'Table List',  icon:'design_bullet-list-67', class: '' },
 
 ];
 
