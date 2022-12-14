@@ -28,6 +28,7 @@ import { TableListComponent } from './table-list/table-list.component';
     AppRoutingModule,
     NgbModule,
     ToastrModule.forRoot(),
+    //AngularSocketModule.forRoot(config)
     // FontAwesomeModule
   ],
   declarations: [
