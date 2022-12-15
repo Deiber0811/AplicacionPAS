@@ -1,4 +1,5 @@
 <div class="panel-header panel-header-lg">
+
   <canvas baseChart id="bigDashboardChart" [datasets]="lineBigDashboardChartData" [labels]="lineBigDashboardChartLabels"
     [colors]="lineBigDashboardChartColors" [options]="lineBigDashboardChartOptions"
     [chartType]="lineBigDashboardChartType" (chartHover)="chartHovered($event)"
@@ -18,8 +19,8 @@
               <i class="now-ui-icons loader_gear"></i>
             </button>
             <div ngbDropdownMenu class="dropdown-menu-right">
-              <a class="dropdown-item" href="#">Entrar an sala</a>
-              <a class="dropdown-item text-danger" href="#">Descargar Consumo</a>
+              <!-- <a class="dropdown-item" href="#">Entrar an sala</a> -->
+              <a class="dropdown-item text-danger" href="javascript:void(0);" (click)="downloadExcel(1,0)">Descargar Consumo</a>
             </div>
           </div>
         </div>
@@ -48,8 +49,9 @@
               <i class="now-ui-icons loader_gear"></i>
             </button>
             <div ngbDropdownMenu class="dropdown-menu-right">
-              <a class="dropdown-item" href="#">Entrar a la sala</a>
-              <a class="dropdown-item text-danger" href="#">Descargar consumo</a>
+              <!-- <a class="dropdown-item" href="#">Entrar a la sala</a> -->
+              <a class="dropdown-item text-danger" href="javascript:void(0);" (click)="downloadExcel(2,0)">Descargar consumo </a>
+              <a class="dropdown-item text-danger" href="javascript:void(0);" (click)="downloadExcel(2,1)">Descargar Consumo Sala1 y Sala2</a>
             </div>
           </div>
         </div>

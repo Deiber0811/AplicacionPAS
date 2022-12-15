@@ -89,7 +89,9 @@ export class DashboardComponent implements OnInit, AfterViewInit {
 
   }
 
-
+  async downloadExcel(IdSala:number,all){
+    await this.authService.excel(IdSala,all);
+  }
   CreatedGraf1(data) {
     // Line General - Header
     var DataGrafica1 = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
